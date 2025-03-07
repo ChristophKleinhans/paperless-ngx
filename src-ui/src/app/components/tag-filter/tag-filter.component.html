@@ -1,3 +1,7 @@
 <div class="tag-filter-container">
-    <!-- Empty container for now -->
+    <div class="d-flex flex-wrap gap-1">
+        @for (tag of tags; track tag.id) {
+        <pngx-tag [tag]="tag" [clickable]="true"></pngx-tag>
+        }
+    </div>
 </div>
