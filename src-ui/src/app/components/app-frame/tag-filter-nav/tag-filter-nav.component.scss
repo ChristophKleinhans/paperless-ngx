@@ -1,7 +1,9 @@
 .tag-filter-container {
-    background-color: var(--pngx-bg-white);
+    background-color: var(--pngx-bg-alt);
     border-radius: 0.25rem;
-    margin: 0.5rem 1rem;
-    padding: 1rem;
+    margin: 0.25rem 1rem;
+    padding: 0.75rem;
     min-height: 100px;
+    box-shadow: var(--pngx-shadow-sm);
+    border: 1px solid var(--pngx-border-color);
 }
