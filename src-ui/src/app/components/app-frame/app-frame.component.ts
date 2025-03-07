@@ -49,11 +49,13 @@ import { DocumentDetailComponent } from '../document-detail/document-detail.comp
 import { ComponentWithPermissions } from '../with-permissions/with-permissions.component'
 import { GlobalSearchComponent } from './global-search/global-search.component'
 import { ToastsDropdownComponent } from './toasts-dropdown/toasts-dropdown.component'
+import { TagFilterNavComponent } from './tag-filter-nav/tag-filter-nav.component'
 
 @Component({
   selector: 'pngx-app-frame',
   templateUrl: './app-frame.component.html',
   styleUrls: ['./app-frame.component.scss'],
+  standalone: true,
   imports: [
     GlobalSearchComponent,
     DocumentTitlePipe,
@@ -68,12 +70,12 @@ import { ToastsDropdownComponent } from './toasts-dropdown/toasts-dropdown.compo
     NgxBootstrapIconsModule,
     DragDropModule,
     TourNgBootstrapModule,
+    TagFilterNavComponent,
   ],
 })
 export class AppFrameComponent
   extends ComponentWithPermissions
-  implements OnInit, ComponentCanDeactivate
-{
+  implements OnInit, ComponentCanDeactivate {
   versionString = `${environment.appTitle} ${environment.version}`
   appRemoteVersion: AppRemoteVersion
 

@@ -6,8 +6,10 @@
   top: 0;
   bottom: 0;
   left: 0;
-  z-index: 995; /* Behind the navbar */
-  padding: 50px 0 0; /* Height of navbar */
+  z-index: 995;
+  /* Behind the navbar */
+  padding: 50px 0 0;
+  /* Height of navbar */
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
   overflow-y: auto;
   --pngx-sidebar-width: 100%;
@@ -36,6 +38,7 @@
     --pngx-sidebar-width: 8.33333333%;
   }
 }
+
 @media (max-width: 767.98px) {
   .sidebar {
     top: 3.5rem;
@@ -73,6 +76,7 @@ main {
   }
 
   .sidebar.slim:not(.animating) {
+
     li.nav-item span,
     .sidebar-heading span {
       display: none;
@@ -80,6 +84,7 @@ main {
   }
 
   .sidebar.animating {
+
     li.nav-item span,
     .sidebar-heading span {
       display: unset;
@@ -90,6 +95,7 @@ main {
   }
 
   .sidebar:not(.slim):not(.animating) {
+
     li.nav-item span,
     .sidebar-heading span {
       position: unset;
@@ -140,9 +146,11 @@ main {
   height: 100%;
   padding-top: 0.5rem;
   overflow-x: hidden;
-  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  overflow-y: auto;
+  /* Scrollable contents if viewport is shorter than content. */
   min-height: min-content;
 }
+
 @supports ((position: -webkit-sticky) or (position: sticky)) {
   .sidebar-sticky {
     position: -webkit-sticky;
@@ -154,7 +162,9 @@ main {
   font-weight: 500;
   white-space: nowrap;
 
-  &:hover, &.active, &:focus {
+  &:hover,
+  &.active,
+  &:focus {
     color: var(--bs-primary);
   }
 
@@ -283,18 +293,21 @@ main {
   0% {
     opacity: 0;
   }
+
   25% {
     opacity: 100%;
   }
+
   75% {
     opacity: 0;
   }
+
   100% {
     opacity: 100%;
   }
 }
 
-.nav-item > .position-absolute {
+.nav-item>.position-absolute {
   cursor: move;
 }
 
