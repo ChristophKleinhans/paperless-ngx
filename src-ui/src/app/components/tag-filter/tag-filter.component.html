@@ -1,7 +1,14 @@
 <div class="tag-filter-container">
-    <div class="d-flex flex-wrap gap-1">
+    @if (loading) {
+    <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="spinner-border spinner-border-sm me-2" role="status"></div>
+        <span i18n>Loading...</span>
+    </div>
+    } @else {
+    <div class="d-flex flex-wrap gap-1 fade" [class.show]="show">
         @for (tag of tags; track tag.id) {
         <pngx-tag [tag]="tag" [clickable]="true"></pngx-tag>
         }
     </div>
+    }
 </div>
