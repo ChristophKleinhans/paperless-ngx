@@ -4,6 +4,8 @@
     margin: 0.25rem 1rem;
     padding: 0.75rem;
     min-height: 100px;
-    box-shadow: var(--pngx-shadow-sm);
+    max-height: 300px;
+    overflow-y: auto;
     border: 1px solid var(--pngx-border-color);
+    box-shadow: var(--pngx-shadow-sm);
 }
