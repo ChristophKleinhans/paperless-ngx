@@ -19,7 +19,7 @@ export class TagComponent {
   constructor(
     private permissionsService: PermissionsService,
     private tagService: TagService
-  ) {}
+  ) { }
 
   @Input()
   public set tag(tag: Tag) {

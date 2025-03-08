@@ -7,7 +7,7 @@
     } @else {
     <div class="d-flex flex-wrap gap-1 fade" [class.show]="show">
         @for (tag of tags; track tag.id) {
-        <pngx-tag [tag]="tag" [clickable]="true" (click)="toggleTag(tag.id)" [selected]="isTagSelected(tag.id)"
+        <pngx-tag [tag]="tag" [clickable]="true" (click)="toggleTag(tag.id)" [class.selected]="isTagSelected(tag.id)"
             linkTitle="Click to toggle tag filter" i18n-linkTitle></pngx-tag>
         }
     </div>

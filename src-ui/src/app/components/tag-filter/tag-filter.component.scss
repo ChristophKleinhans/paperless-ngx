@@ -8,4 +8,11 @@
     overflow-y: auto;
     border: 1px solid var(--pngx-border-color);
     box-shadow: var(--pngx-shadow-sm);
+
+    // When tags are selected, dim unselected tags
+    &:has(pngx-tag.selected) {
+        pngx-tag:not(.selected) {
+            opacity: 0.5;
+        }
+    }
 }
